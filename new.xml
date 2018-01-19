@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<database>
+  <Data>
+    <HOTEL_ID>1</HOTEL_ID>
+    <NAME>Ambotel</NAME>
+    <STARS>4</STARS>
+    <NIGHT_COST>340</NIGHT_COST>
+    <CITY_ID>1</CITY_ID>
+  </Data>
+  <Data>
+    <HOTEL_ID>2</HOTEL_ID>
+    <NAME>Hotel ibis budget Chateau Gaillard</NAME>
+    <STARS>3</STARS>
+    <NIGHT_COST>280</NIGHT_COST>
+    <CITY_ID>1</CITY_ID>
+  </Data>
+  <Data>
+    <HOTEL_ID>3</HOTEL_ID>
+    <NAME>Le Clos du Bois Joli</NAME>
+    <STARS>4</STARS>
+    <NIGHT_COST>340</NIGHT_COST>
+    <CITY_ID>1</CITY_ID>
+  </Data>
+  <Data>
+    <HOTEL_ID>4</HOTEL_ID>
+    <NAME>Hotel Terminus et de la Gare</NAME>
+    <STARS>2</STARS>
+    <NIGHT_COST>220</NIGHT_COST>
+    <CITY_ID>1</CITY_ID>
+  </Data>
+</database>
