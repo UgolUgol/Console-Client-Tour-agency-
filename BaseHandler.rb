@@ -37,7 +37,6 @@ class BaseHandler
 		end
 		xml_string = '<database>' + xml_table.join() + '</database>'
 		@xml_data = Nokogiri::XML(xml_string) 
-		print @xml_data
 		@xml_data
 	end
 
@@ -99,7 +98,21 @@ class BaseHandler
 			sth.execute
 			table = self.print_table(sth) 
 			sth.finish
-			table
+
+			page_size = 5
+			left_border = 1
+			right_border = left_border + page_size
+			len = table.xpath("//Data").length
+			while left_border < len
+				for i in left_border..right_border-1
+					puts table.xpath("//Data")[i-1]
+				end
+				puts "press <enter> to next".green
+				a = gets
+				left_border = right_border
+				right_border = (right_border + page_size < len ? right_border + page_size : len + 1)
+
+			end
 		rescue DBI::DatabaseError => e
      		puts "An error occurred"
 			puts "Error code: #{e.err}"
